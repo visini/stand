@@ -3,7 +3,7 @@ authors = ["Camillo Visini <c.visini@gmail.com>"]
 description = "Menu bar utility app (macOS) for controlling a standing desk."
 license = "MIT"
 name = "stand"
-version = "0.2.1"
+version = "0.1.1"
 
 [tool.poetry.dependencies]
 paramiko = "^2.7.2"
