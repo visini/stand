@@ -22,6 +22,8 @@ debug:
 release:
 ifeq ($(VERSION_SET),1)
 	poetry version $(VERSION)
+	git add pyproject.toml
+	git commit -m "Release Version $(Version)"
 	cd dist && zip -r $(APP_NAME).app.zip $(APP_NAME).app
 	gh release create $(VERSION) 'dist/$(APP_NAME).app.zip#$(APP_NAME).app.zip'
 else
