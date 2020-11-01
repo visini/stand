@@ -1,6 +1,6 @@
 ![Header](header.png)
 
-# Stand
+# Stand – macOS Menubar App
 
 Menu bar utility app (macOS) for controlling a standing desk.
 
