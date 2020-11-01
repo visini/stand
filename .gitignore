@@ -1,0 +1,4 @@
+.eggs
+dist
+build
+.DS_Store
