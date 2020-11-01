@@ -14,13 +14,14 @@ install:
 	export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/sqlite/lib/pkgconfig"
 	poetry install
 dev:
-	poetry run python stand.py
+	poetry run python main.py
 compile:
-	poetry run python setup.py py2app
-debug:
+	export APP_NAME=$(APP_NAME) && poetry run python setup.py py2app
+debug: compile
 	open dist/$(APP_NAME).app/Contents/MacOS/$(APP_NAME)
-release:
+release: 
 ifeq ($(VERSION_SET),1)
+	export VERSION=$(VERSION) && export APP_NAME=$(APP_NAME) && poetry run python setup.py py2app
 	poetry version $(VERSION)
 	git add pyproject.toml
 	git commit -m "Release $(VERSION)"
