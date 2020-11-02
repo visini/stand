@@ -4,4 +4,6 @@
 
 Menu bar utility app (macOS) for controlling a standing desk.
 
-See `Makefile` for how to debug, build, and release.
+![Screenshot](screenshot.png)
+
+See `Makefile` for how to install, debug, build, and release. Or download the [latest release](https://github.com/visini/stand/releases).

@@ -1,19 +1,20 @@
 import rumps
 
-from ssh_set_desk_height import ssh_set_desk_height
+from ssh_desk_handler import SSHDeskHandler
 
 
 class StandApp(object):
     def __init__(self):
         self.app = rumps.App("Stand", "⚡")
+        self.desk_handler = SSHDeskHandler()
 
     @rumps.clicked("↑ Stand")
     def stand(self):
-        ssh_set_desk_height(90)
+        self.desk_handler.up()
 
     @rumps.clicked("↓ Sit")
     def sit(self):
-        ssh_set_desk_height(10)
+        self.desk_handler.down()
 
     def run(self):
         self.app.run()
