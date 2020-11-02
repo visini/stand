@@ -2,7 +2,7 @@
 
 # Stand – macOS Menubar App
 
-Menu bar utility app (macOS) for controlling a standing desk.
+Menu bar utility app (macOS) for controlling a standing desk. See [visini/desk](https://github.com/visini/desk) for implementation details.
 
 ![Screenshot](screenshot.png)
 
