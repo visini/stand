@@ -2,7 +2,7 @@ import rumps
 
 from ssh_desk_handler import SSHDeskHandler
 
-SEC_TO_MIN = 1
+SEC_TO_MIN = 60
 
 
 class StandApp(object):
